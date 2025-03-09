@@ -1,6 +1,6 @@
 # llm-fine-tuning-prepare-dataset-from-md
 
-This repository contains Python scripts that help in preparing blog posts written in Markdown (`mdx`) format for fine-tuning a Large Language Model (LLM). The scripts clean the blog posts, generate applicable `instruction` prompts for each using Ollama, and convert the prompts and blog posts into an Alpaca-formatted JSON file suitable for training.
+This repository contains Python scripts that prepare datasets used in fine tuning Language Models (LLM). It includes general scripts that are generally helpful for preparing and validating datasets as well as scripts that are for specific dataset preparation scenarios.
 
 ## Table of Contents
 - [Prerequisites](#prerequisites)
@@ -23,6 +23,8 @@ Ensure you have Python installed on your system. Additionally, ensure [Ollama](h
 
 #### `general` folder
 
+This folder contains Python scripts that are helpful when preparing and validating datasets for Large LLM fine tuning.
+
 ##### `count_tokens.py`
 
 **Purpose:**  
@@ -42,6 +44,8 @@ This script counts the number of tokens in the combined `instruction` and `outpu
 
 
 #### `md-to-alpaca-json` folder
+
+This folder contains Python scripts that help in preparing blog posts written in Markdown (`mdx`) format for fine-tuning a LLM. The scripts clean the blog posts, generate applicable `instruction` prompts for each using Ollama, and convert the prompts and blog posts into an Alpaca-formatted JSON file suitable for training.
 
 ##### `clean_blog_posts.py`
 
