@@ -1,6 +1,6 @@
 # llm-fine-tuning-dataset-prep-tools
 
-This repository contains Python scripts that prepare datasets used in fine tuning Language Models (LLM). It includes general scripts that are generally helpful for preparing and validating datasets as well as scripts that are for specific dataset preparation scenarios.
+This repository contains Python scripts that prepare datasets used in fine tuning Language Models (LLM). It includes general scripts that are helpful for preparing and validating datasets as well as scripts that are for specific dataset preparation scenarios.
 
 ## Table of Contents
 - [Prerequisites](#prerequisites)
