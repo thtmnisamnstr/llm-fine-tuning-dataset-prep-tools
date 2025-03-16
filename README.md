@@ -87,3 +87,28 @@ This script generates `instruction` prompts from the cleaned markdown blog posts
 **Details:**  
 - **Input:** Cleaned markdown files in the `cleaned-data` directory.
 - **Output:** Alpaca-formatted JSON file named `data.json`.
+
+
+#### `batch-image-resize` folder
+
+This folder contains a Python script for resizing images to use in Flux fine-tuning.
+
+##### `batch-image-resize.py`
+
+**Purpose:**  
+This script reads all `tif`, `png`, and `jpg` files in a provided input folder, resizes them to a provided short side length, and saves them in `png` format to a provided output folder.
+
+**Usage:**
+
+1. Must install `Pillow` - `pip install Pillow`
+2. Run the script from the command line:
+
+   ```bash
+   python .\batch-image-resize.py "E:\Archive\Pictures\Photography\Photography - Negative Scans\TIFF" "D:\ai\comfyui-flux-fine-tuning\data-images" 1024
+   ```
+
+3. The cleaned blog posts will be saved in the `cleaned-data` directory or an output directory.
+
+**Details:**  
+- **Input:** Input Directory, Output Directory, Shortest Side Length.
+- **Output:** Resized images in `png` format in the Output Directory.
